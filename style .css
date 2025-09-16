@@ -220,8 +220,19 @@ nav {
     object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+      animation: pulse-animation 2s infinite;
+
 
 }
+@keyframes pulse-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+   
+
 
 .profile-text {
     position: absolute;
@@ -290,15 +301,16 @@ nav {
         grid-template-rows: auto;
         gap: 20px;
     }
-.nijas-image {
-    border: 2px solid white;
-    
-    width: 350px;
-    height: 350px;
-  
-    border-radius: 50%;
 
-}
+    .nijas-image {
+        border: 2px solid white;
+
+        width: 350px;
+        height: 350px;
+
+        border-radius: 50%;
+
+    }
 
 
     .main-title {
@@ -312,7 +324,7 @@ nav {
     .profile-card {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        
+
     }
 
     .social-links-container {
@@ -332,7 +344,7 @@ nav {
         margin-top: 20px;
     }
 
- 
+
 
 
 }
@@ -1459,6 +1471,11 @@ textarea {
 }
 
 /* ----------------------------------------- */
+.det {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .details {
 
@@ -1468,6 +1485,7 @@ textarea {
     max-width: 700px;
     /* width: 90%; */
 
+   
     text-align: center;
     transform: scale(0.95);
     opacity: 0;
@@ -1483,6 +1501,7 @@ textarea {
     max-width: 700px;
     /* width: 90%; */
     text-align: center;
+
     transform: scale(0.95);
     opacity: 0;
     animation: scaleIn 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
@@ -1503,6 +1522,7 @@ textarea {
     margin-bottom: 1rem;
     animation: fadeInDown 1s ease-out;
     font-family: "Audiowide", sans-serif;
+
 }
 
 /* Keyframes for the heading animation */
